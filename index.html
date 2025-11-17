@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Excel Dashboard Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; margin: 0; background-color: #f8f9fa; color: #212529; }
+    header { text-align: center; padding: 40px 20px; font-size: 2em; font-weight: 600; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 30px; padding: 20px; max-width: 1200px; margin: 0 auto; }
+    .card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+    .card img { width: 100%; height: auto; border-radius: 10px; cursor: pointer; transition: transform 0.3s; }
+    .card img:hover { transform: scale(1.03); }
+    .title { font-size: 1.2em; font-weight: 600; margin-top: 15px; }
+    .desc { font-size: 1em; margin-top: 8px; }
+    .dashboard-btn { display: inline-block; margin-top: 14px; background: #007bff; color: white; padding: 10px 18px; border-radius: 8px; text-decoration: none; transition: background 0.3s; }
+    .dashboard-btn:hover { background: #0056b3; }
+  </style>
+</head>
+<body>
+  <header>My Excel Dashboard Gallery</header>
+  <div class="gallery">
+    <div class="card">
+      <img src="plot1.png" alt="Plot 1 Preview" onclick="window.open('https://github.com/yourusername/yourrepo/blob/main/ExcelDashboard.xlsx')">
+      <div class="title">Sales Trend Chart</div>
+      <div class="desc">Visualizes monthly sales growth and identifies seasonal patterns.</div>
+      <a href="https://github.com/yourusername/yourrepo/blob/main/ExcelDashboard.xlsx" class="dashboard-btn" target="_blank">View Dashboard</a>
+    </div>
+    <div class="card">
+      <img src="plot2.png" alt="Plot 2 Preview" onclick="window.open('https://github.com/yourusername/yourrepo/blob/main/ExcelDashboard.xlsx')">
+      <div class="title">Product Category Breakdown</div>
+      <div class="desc">Shows sales distribution across product categories for targeted insights.</div>
+      <a href="https://github.com/yourusername/yourrepo/blob/main/ExcelDashboard.xlsx" class="dashboard-btn" target="_blank">View Dashboard</a>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+</body>
+</html>
